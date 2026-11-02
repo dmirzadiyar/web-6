@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #212529;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-section,
+.about-section,
+.gallery-section,
+.favorites-section,
+.skills-section,
+.social-section,
+.form-section,
+.animation-section {
+    background-color: white;
+    color: #212529;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.name {
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.introduction {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.about-section p,
+.about-section li,
+.favorite-content p {
+    line-height: 1.8;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.favorite-item {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.favorite-heading {
+    background-color: #0d6efd;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.favorite-content {
+    display: none;
+    padding: 20px;
+}
+
+.favorite-content p {
+    margin: 0;
+}
+
+#skillsList {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skillsList .list-group-item {
+    padding: 12px 18px;
+}
+
+.social-section a {
+    color: #0d6efd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-section a:hover {
+    text-decoration: underline;
+}
+
+.live-preview {
+    background-color: #f4f6f9;
+    border: 1px solid #dee2e6;
+}
+
+.live-preview p {
+    margin-bottom: 8px;
+}
+
+.skill-bar-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.skill-bar-container h5 {
+    margin: 0;
+}
+
+.skill-track {
+    width: 100%;
+    height: 22px;
+    background-color: #dee2e6;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-bar {
+    width: 0;
+    height: 100%;
+    background-color: #0d6efd;
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #212529;
+    color: white;
+}
+
+.dark-mode {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+.dark-mode .profile-section,
+.dark-mode .about-section,
+.dark-mode .gallery-section,
+.dark-mode .favorites-section,
+.dark-mode .skills-section,
+.dark-mode .social-section,
+.dark-mode .form-section,
+.dark-mode .animation-section {
+    background-color: #292929;
+    color: #ffffff;
+}
+
+.dark-mode .profile-section h1,
+.dark-mode .profile-section h2,
+.dark-mode .profile-section h3,
+.dark-mode .profile-section p,
+.dark-mode .about-section h2,
+.dark-mode .about-section h4,
+.dark-mode .about-section p,
+.dark-mode .about-section li,
+.dark-mode .gallery-section h2,
+.dark-mode .gallery-section h5,
+.dark-mode .favorites-section h2,
+.dark-mode .skills-section h2,
+.dark-mode .social-section h2,
+.dark-mode .social-section p,
+.dark-mode .form-section h2,
+.dark-mode .form-section label,
+.dark-mode .live-preview p,
+.dark-mode .live-preview h4,
+.dark-mode .animation-section h2,
+.dark-mode .animation-section h5,
+.dark-mode .animation-section span {
+    color: #ffffff;
+}
+
+.dark-mode .name {
+    color: #6ea8fe;
+}
+
+.dark-mode .favorite-item {
+    border-color: #555555;
+}
+
+.dark-mode .favorite-content {
+    background-color: #333333;
+    color: white;
+}
+
+.dark-mode #skillsList .list-group-item {
+    background-color: #333333;
+    color: white;
+    border-color: #555555;
+}
+
+.dark-mode .live-preview {
+    background-color: #333333;
+    border-color: #555555;
+}
+
+.dark-mode .form-control {
+    background-color: #333333;
+    color: white;
+    border-color: #666666;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #bbbbbb;
+}
+
+.dark-mode .skill-track {
+    background-color: #555555;
+}

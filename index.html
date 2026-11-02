@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+
+        <section class="profile-section text-center p-5 rounded">
+            <h1 id="greeting">Welcome to My Personal Portfolio!</h1>
+
+            <h2 class="name mt-3">Dinislam Mirzadiyar</h2>
+
+            <h3 id="headline" class="mt-3">Aspiring Software Developer</h3>
+
+            <p class="introduction mt-3">
+                Hello! I am a second-year IT student at Astana IT University.
+                I am interested in programming, web development, and learning new technologies.
+            </p>
+
+            <div class="mt-4">
+                <button id="changeGreeting" class="btn btn-primary m-2">Change Greeting</button>
+                <button id="changeHeadline" class="btn btn-success m-2">Change Headline</button>
+            </div>
+
+            <div class="mt-3">
+                <button id="lightTheme" class="btn btn-outline-primary m-2">Light Theme</button>
+                <button id="darkTheme" class="btn btn-dark m-2">Dark Theme</button>
+            </div>
+        </section>
+
+        <section class="about-section mt-5 p-4 rounded">
+            <h2 class="text-center mb-4">About Me</h2>
+
+            <p>
+                My name is Dinislam, and I am an IT student who enjoys learning
+                programming and exploring new technologies. My goal is to become
+                a professional software developer.
+            </p>
+
+            <div id="aboutDetails">
+                <h4>Current Status</h4>
+                <p id="statusMessage">Currently learning jQuery!</p>
+
+                <h4 class="mt-4">Fun Facts About Me</h4>
+                <ul>
+                    <li>I study at Astana IT University.</li>
+                    <li>My favorite hobby is volleyball.</li>
+                    <li>I enjoy learning programming languages.</li>
+                    <li>My goal is to become a software developer.</li>
+                </ul>
+            </div>
+
+            <div class="text-center mt-4">
+                <button id="hideAbout" class="btn btn-danger m-2">Hide</button>
+                <button id="showAbout" class="btn btn-success m-2">Show</button>
+                <button id="toggleAbout" class="btn btn-primary m-2">Toggle</button>
+            </div>
+        </section>
+
+        <section class="gallery-section mt-5 p-4 rounded">
+            <h2 class="text-center mb-4">My Photo Gallery</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <img class="gallery-image img-fluid rounded"
+                         src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=900"
+                         alt="Cycling and outdoor sports">
+                    <h5 class="text-center mt-3">Sports and Activities</h5>
+                </div>
+
+                <div class="col-md-6">
+                    <img class="gallery-image img-fluid rounded"
+                         src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900"
+                         alt="People working with computers">
+                    <h5 class="text-center mt-3">Technology and Programming</h5>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button id="fadeInImages" class="btn btn-success m-2">Fade In</button>
+                <button id="fadeOutImages" class="btn btn-danger m-2">Fade Out</button>
+                <button id="fadeToggleImages" class="btn btn-primary m-2">Fade Toggle</button>
+            </div>
+        </section>
+
+        <section class="favorites-section mt-5 p-4 rounded">
+            <h2 class="text-center mb-4">My Favorites</h2>
+
+            <div class="favorite-item">
+                <h4 class="favorite-heading">My Favorite Music</h4>
+                <div class="favorite-content">
+                    <p>I enjoy listening to different music genres. Music helps me relax and stay motivated.</p>
+                </div>
+            </div>
+
+            <div class="favorite-item mt-3">
+                <h4 class="favorite-heading">My Favorite Movie</h4>
+                <div class="favorite-content">
+                    <p>I enjoy watching science fiction and action movies. They are entertaining and interesting.</p>
+                </div>
+            </div>
+
+            <div class="favorite-item mt-3">
+                <h4 class="favorite-heading">My Favorite Subject</h4>
+                <div class="favorite-content">
+                    <p>My favorite subject is programming because I enjoy solving problems and creating applications.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button id="openAllPanels" class="btn btn-success m-2">Open All</button>
+                <button id="closeAllPanels" class="btn btn-danger m-2">Close All</button>
+            </div>
+        </section>
+
+        <section class="skills-section mt-5 p-4 rounded">
+            <h2 class="text-center mb-4">My Technical Skills</h2>
+
+            <ul id="skillsList" class="list-group mb-4">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Python</li>
+            </ul>
+
+            <div class="input-group mb-3">
+                <input type="text" id="skillInput" class="form-control" placeholder="Enter a new skill">
+            </div>
+
+            <div class="text-center">
+                <button id="addSkill" class="btn btn-primary m-2">Add Skill</button>
+                <button id="prependSkill" class="btn btn-success m-2">Prepend Skill</button>
+                <button id="removeSkill" class="btn btn-danger m-2">Remove Skill</button>
+            </div>
+        </section>
+
+        <section class="social-section mt-5 p-4 rounded text-center">
+            <h2 class="mb-3">Connect With Me</h2>
+
+            <p>
+                Visit my social profile:
+                <a id="socialLink" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+
+            <button id="changeLink" class="btn btn-primary mt-2">Change Social Link</button>
+        </section>
+
+        <section class="form-section mt-5 p-4 rounded">
+            <h2 class="text-center mb-4">Live Contact Form</h2>
+
+            <form id="liveForm">
+                <div class="mb-3">
+                    <label for="userName" class="form-label">Name</label>
+                    <input type="text" id="userName" class="form-control" placeholder="Enter your name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email</label>
+                    <input type="email" id="userEmail" class="form-control" placeholder="Enter your email">
+                </div>
+            </form>
+
+            <div class="live-preview mt-4 p-3 rounded">
+                <h4>Live Preview</h4>
+                <p>Name: <span id="nameOutput">Not entered yet</span></p>
+                <p>Email: <span id="emailOutput">Not entered yet</span></p>
+            </div>
+        </section>
+
+        <section class="animation-section mt-5 p-4 rounded">
+            <h2 class="text-center mb-4">My Skill Levels</h2>
+
+            <div class="skill-bar-container">
+                <div class="d-flex justify-content-between mb-2">
+                    <h5>HTML</h5>
+                    <span>90%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-bar" id="htmlBar"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar-container mt-4">
+                <div class="d-flex justify-content-between mb-2">
+                    <h5>CSS</h5>
+                    <span>75%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-bar" id="cssBar"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar-container mt-4">
+                <div class="d-flex justify-content-between mb-2">
+                    <h5>JavaScript</h5>
+                    <span>60%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-bar" id="jsBar"></div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button id="animateSkills" class="btn btn-primary">
+                    Animate My Skills
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-4">
+        <p>© 2026 Dinislam Mirzadiyar | IT-2503</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
